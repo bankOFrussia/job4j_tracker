@@ -10,11 +10,13 @@ public class Computer {
         this.ssd = ssd;
         this.cpu = cpu;
     }
+
     public void printInfo() {
         System.out.println("Много мониторов: " + multiMonitor);
         System.out.println("SSD: " + ssd + " Gb");
         System.out.println("Модель CPU: " + cpu);
     }
+
     public static void main(String[] args) {
         Computer computer = new Computer(true, 256, "Intel Core I7-10700K");
         computer.printInfo();
