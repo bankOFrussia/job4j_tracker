@@ -5,12 +5,12 @@ public class Library {
         Book headFirstJava = new Book("Head First Java", 345);
         Book cleanCode = new Book("Clean Code", 555);
         Book effectiveJava = new Book("Effective Java", 666);
-        Book JavaTheCompleteReference = new Book("Java - The Complete Reference", 1111);
+        Book javaTheCompleteReference = new Book("Java - The Complete Reference", 1111);
         Book[] libra = new Book[4];
         libra[0] = headFirstJava;
         libra[1] = cleanCode;
         libra[2] = effectiveJava;
-        libra[3] = JavaTheCompleteReference;
+        libra[3] = javaTheCompleteReference;
         for (int i = 0; i < libra.length; i++) {
             Book ex = libra[i];
             System.out.println("В книге " + ex.getName() + " " + ex.getCount() + " страниц");
