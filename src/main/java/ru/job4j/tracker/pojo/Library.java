@@ -25,7 +25,7 @@ public class Library {
         }
         System.out.println("Цикл с именем Clean Code");
         for (int i = 0; i < libra.length; i++) {
-            if (libra[i].getName().equals("Clean Code")) {
+            if ("Clean Code".equals(libra[i].getName())) {
                 System.out.println("Книга " + libra[i].getName() + " имеет индекс " + i);
             }
         }
