@@ -1,6 +1,7 @@
 package ru.job4j.tracker.poly;
 
 public class Bus implements Transport {
+
     @Override
     public void go() {
 
