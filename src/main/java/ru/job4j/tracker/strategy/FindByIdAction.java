@@ -8,7 +8,7 @@ import ru.job4j.tracker.UserAction;
 public class FindByIdAction implements UserAction {
     @Override
     public String name() {
-        return "Find item vy ID";
+        return "Find item by ID";
     }
 
     @Override
