@@ -1,10 +1,12 @@
 package ru.job4j.tracker;
 
-import ru.job4j.tracker.Input;
-import ru.job4j.tracker.Tracker;
-import ru.job4j.tracker.UserAction;
-
 public class ExitAction implements UserAction {
+    private final Output output;
+
+    public ExitAction(Output output) {
+        this.output = output;
+    }
+
     @Override
     public String name() {
         return "Exit";

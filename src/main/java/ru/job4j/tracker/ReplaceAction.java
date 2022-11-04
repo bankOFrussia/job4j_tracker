@@ -1,11 +1,12 @@
 package ru.job4j.tracker;
 
-import ru.job4j.tracker.Input;
-import ru.job4j.tracker.Item;
-import ru.job4j.tracker.Tracker;
-import ru.job4j.tracker.UserAction;
-
 public class ReplaceAction implements UserAction {
+    private final Output output;
+
+    public ReplaceAction(Output output) {
+        this.output = output;
+    }
+
     @Override
     public String name() {
         return "Replace item";
