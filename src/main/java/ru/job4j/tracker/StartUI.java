@@ -1,7 +1,5 @@
 package ru.job4j.tracker;
 
-import ru.job4j.tracker.strategy.*;
-
 public class StartUI {
 
     private void showMenu(UserAction[] actions) {
@@ -27,7 +25,7 @@ public class StartUI {
         UserAction[] actions = {
                 new CreateAction(),
                 new ShowAction(),
-                new EditAction(),
+                new ReplaceAction(),
                 new FindByIdAction(),
                 new FindByNameAction(),
                 new DeleteAction(),

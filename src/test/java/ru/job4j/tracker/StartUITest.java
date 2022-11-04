@@ -1,10 +1,6 @@
 package ru.job4j.tracker;
 
 import org.junit.jupiter.api.Test;
-import ru.job4j.tracker.strategy.CreateAction;
-import ru.job4j.tracker.strategy.DeleteAction;
-import ru.job4j.tracker.strategy.EditAction;
-import ru.job4j.tracker.strategy.ExitAction;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -33,7 +29,7 @@ public class StartUITest {
                 new String[] {"0", "1", replacedName, "1"}
         );
         UserAction[] actions = {
-                new EditAction(),
+                new ReplaceAction(),
                 new ExitAction()
         };
         new StartUI().init(in, tracker, actions);

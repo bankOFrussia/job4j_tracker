@@ -1,9 +1,4 @@
-package ru.job4j.tracker.strategy;
-
-import ru.job4j.tracker.Input;
-import ru.job4j.tracker.Item;
-import ru.job4j.tracker.Tracker;
-import ru.job4j.tracker.UserAction;
+package ru.job4j.tracker;
 
 public class ShowAction implements UserAction {
     @Override

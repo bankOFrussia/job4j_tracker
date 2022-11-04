@@ -1,14 +1,14 @@
-package ru.job4j.tracker.strategy;
+package ru.job4j.tracker;
 
 import ru.job4j.tracker.Input;
 import ru.job4j.tracker.Item;
 import ru.job4j.tracker.Tracker;
 import ru.job4j.tracker.UserAction;
 
-public class EditAction implements UserAction {
+public class ReplaceAction implements UserAction {
     @Override
     public String name() {
-        return "Edit item";
+        return "Replace item";
     }
 
     @Override
