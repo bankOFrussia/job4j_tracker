@@ -1,4 +1,4 @@
-package ru.job4j.ex;
+package ru.job4j.tracker.ex;
 
 import java.util.Arrays;
 
@@ -8,8 +8,8 @@ public class BackArray {
         int middle = names.length / 2;
         for (int index = 0; index < middle; index++) {
             String temp = names[index];
-            names[index] = names[names.length - index];
-            names[names.length - index] = temp;
+            names[index] = names[names.length - index - 1];
+            names[names.length - index - 1] = temp;
         }
         System.out.println(Arrays.toString(names));
     }
